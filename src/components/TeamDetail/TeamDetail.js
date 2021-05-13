@@ -30,25 +30,24 @@ const TeamDetail = () => {
 
 
     // Alternative team details.
-    let alterDiv;
-    const alterTeam = familiar ? <div id="background" className="women-team">
-        <div>
-            <h3>{strAlternate} Women</h3>
-            <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {intFormedYear}</p>
-            <p><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
-            <p><FontAwesomeIcon icon={faFutbol} /> Sports type: {strSport}</p>
-            <p><FontAwesomeIcon icon={faMars} /> Gender: Female</p>
-            <button onClick={() => setFamiliar(!familiar)} className="btn btn-success">Alter Team  <FontAwesomeIcon icon={faArrowRight} /></button>
-            <Link to="/Home" className="btn-home">
-                <FontAwesomeIcon icon={faHome} size="2x" />
-            </Link>
+    const alterTeam = familiar
+        ? <div id="background" className="women-team">
+            <div>
+                <h3>{strAlternate} Women</h3>
+                <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {intFormedYear}</p>
+                <p><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</p>
+                <p><FontAwesomeIcon icon={faFutbol} /> Sports type: {strSport}</p>
+                <p><FontAwesomeIcon icon={faMars} /> Gender: Female</p>
+                <button onClick={() => setFamiliar(!familiar)} className="btn btn-success">Alter Team  <FontAwesomeIcon icon={faArrowRight} /></button>
+                <Link to="/Home" className="btn-home">
+                    <FontAwesomeIcon icon={faHome} size="2x" />
+                </Link>
+            </div>
+            <div>
+                <img className="team-image" src={image2} alt="" />
+            </div>
         </div>
-        <div>
-            <img className="team-image" src={image2} alt="" />
-        </div>
-
-    </div>
-        : alterDiv = <div id="background" className="men-team">
+        : <div id="background" className="men-team">
             <div>
                 <h3>Fc {strTeam}</h3>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {intFormedYear}</p>
