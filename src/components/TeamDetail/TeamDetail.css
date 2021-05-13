@@ -1,0 +1,65 @@
+.team-detail{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#background{
+    border-radius: 15px;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.men-team{
+    background-color: blue;
+}
+.women-team{
+    background-color: rgb(194, 97, 113);
+}
+.team-image{
+    height: 250px;
+    width: 450px;
+}
+
+.team-description{
+    text-align: justify;
+    margin-top: 50px;
+    
+}
+.team-container{
+    background-color: #282c34;
+    color: white;
+   
+}
+.background-image{
+    margin-bottom: 35px;
+}
+
+.btn-home{
+    color: white;
+    margin-left: 10px;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #background{
+        border-radius: 15px;
+        color: white;
+        text-align: left;
+        padding: 20px;
+        display: block;
+        justify-content: space-between;
+    }
+
+    .background-image img{
+        height: 200px;
+        width: 200px;
+        align-items: center;
+        
+    }
+
+    .team-image{
+        padding-top: 20px;
+    }
+}
